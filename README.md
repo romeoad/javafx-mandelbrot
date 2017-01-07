@@ -52,3 +52,4 @@ This piece of software uses [Apache License](http://www.apache.org/licenses/LICE
 
 - [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) article on Wikipedia
 - [Benoit Mandelbrot](https://en.wikipedia.org/wiki/Benoit_Mandelbrot) the fractalist, born in Warsaw just like me ;)
++ [Spock framework](http://spockframework.org) the most developer friendly test framework I know
