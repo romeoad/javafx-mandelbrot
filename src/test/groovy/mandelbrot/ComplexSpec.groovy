@@ -4,12 +4,14 @@ import spock.lang.Specification
 import spock.lang.Unroll
 
 /**
- * Created by krzycho on 07/01/17.
+ * Complex class tests/specification
+ *
+ * Created by krzysztof.osiecki@icloud.com on 07/01/17.
  */
 class ComplexSpec extends Specification {
 
     @Unroll
-    def "complex number constructor with (#real, #imaginary)ś"() {
+    def "complex number constructor with (#real, #imaginary)"() {
         given:
         Complex n = new Complex(real, imaginary)
 
@@ -28,10 +30,10 @@ class ComplexSpec extends Specification {
     @Unroll
     def "abs for (#real, #imaginary) complex"() {
         given:
-        Complex n = new Complex(2, 2)
+        Complex n = new Complex(real, imaginary)
 
         expect:
-        n.abs() == 8.0d
+        n.abs() == result
 
         where:
         real | imaginary || result
