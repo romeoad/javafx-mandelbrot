@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+version = 1.0
+mainClassName = 'mandelbrot.Main'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'mandelbrot.Main'
+    }
+}
