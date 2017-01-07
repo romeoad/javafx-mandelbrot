@@ -23,7 +23,7 @@ And then you will find executable jar in `build/libs`.
 
 There are two command line arguments:
 
-* width for setting canvas width (*if it is less then 200 it will become 200 due to labels length*)
+* width for setting canvas width (*if it is less then 200 it will become 200 due to label lengths*)
 * height for setting canvas height (*a few pixels will be added to accomodate labels and buttons*)
 
 Basically if you start it like:
