@@ -34,11 +34,15 @@ you will end up with 1000x1000 pixel canvas and buttons and labels below. Canvas
 
 ### Calculating colors
 
-General rule of coloring pixels for Mandelbrot set is to check how many iterations would take for current coordinates to reach limit, and then color it accordingly. I modified slightly coloring procedure to enhance near-zero values represented by blacks. It very similar to gamma correction in your display.
+General rule of coloring pixels for Mandelbrot set is to check how many iterations would take for current coordinates to reach limit, and then color it accordingly. I modified slightly coloring procedure to enhance near-zero values represented by blacks. It is very similar to gamma correction in your display.
 
 #### Concurency
 
 Long time ago I did similar routine which plotted Mandelbrot set. It was slow since machines were slow at that time and one of the methods to make things go faster was using a little more threads to compute. I noticed during development of this example that adding more computational threads that also paint their part in parallel does not shorten execution time. It even makes it slower on my box. Plotting default set with one thread took 2ms while with 8 threads it took 423ms. This was quite a surprise for me, but I suspect it is related to JavaFX usage.
+
+#### Automatic tests
+
+I added simple unit test made with fabulous Spock test framework. Just because tests are cool and provides developer with instant feedback on quality of one's code. Remember: test will make your life easier! In a long shot of course.
 
 #### License
 
